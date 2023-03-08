@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="description" content="Proyecto 360" />
+    <meta name="keywords" content="Proyecto,360" />
+    <meta name="lenguaje" content="ES" />
+    <meta name=" author" content="lopezvidalpablo6@gmail.com" />
+    <meta name=" robots" content=" index,follow" />
+    <meta name="revised" content="friday, january 20th, 2023, 15:00pm" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <meta name="X-UA-compatible " content="IE-edge, chrome1" />
+
+    <title>Proyecto 360</title>
+    <link href="css/css360.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@200&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../portfolio_personal/imagenes/pablo.png" type="image/png"/>
+  </head>
+  <body>
+        <div id="cabecera">
+            <a href="index.html"><h1>API-FOOTBALL</h1></a>
+        </div>
+        <div class="cajoon">
+            <a href="#" class="_link" data-league="39"><div class="botonescambio" id="botonescambio1">England - Premier League</div></a>
+            <a href="#" class="_link" data-league="61"><div class="botonescambio">France - Ligue 1</div></a>
+            <a href="#" class="_link" data-league="78"><div class="botonescambio">Germany - Bundesliga 1</div></a>
+        </div>
+
+        <div id="wg-api-football-standings"
+            data-host="v3.football.api-sports.io"
+            data-key="29d12c44d0bdf082d4a9c3c632664cb5"
+            data-league="39"
+            data-team=""
+            data-season="2022"
+            data-theme=""
+            data-show-errors="false"
+            data-show-logos="true"
+            class="wg_loader">
+        </div>
+        <script
+            type="module"
+            src="https://widgets.api-sports.io/2.0.3/widgets.js">
+        </script>
+
+    </body>
+</html>
+<script>
+    document.addEventListener('click', function (event) {
+
+        if (!event.target.matches('._link')) return
+        event.preventDefault()
+
+        let id = event.target.getAttribute('data-league')
+
+        let standings = document.getElementById('wg-api-football-standings')
+            standings.innerHTML = ''
+            standings.setAttribute('data-league', id);
+
+        window.document.dispatchEvent(new Event("DOMContentLoaded", {
+          bubbles: true,
+          cancelable: true
+        }));
+    })
+</script>
+
+
+
+
+  

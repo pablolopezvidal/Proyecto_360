@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    color: white;
+    min-height: 100vh;
+}
+#cabecera{
+    width: 100%;
+    height: 20vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+#caja1{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+#caja1_1{
+    width: 60%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#caja1_2{
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#caja3{
+ width: 90%;
+ height: 60vh;
+ gap: 30px;
+ display: flex;
+ flex-direction: row;
+ margin-top: 30px;
+ border-radius: 15px;
+}
+#caja3_1{
+ width: 50%;
+ height: 60vh;
+ background-image: url(../img/Captura\ de\ pantalla\ 2023-03-07\ 163217.png);
+ background-size:cover;
+ border-radius: 15px;
+ min-width: 38rem;
+
+}
+#caja3_2{
+    width: 50%;
+    height: 60vh;
+    background-image: url(../img/Captura\ de\ pantalla\ 2023-03-07\ 163320.png);
+    background-size:cover;
+    border-radius: 15px;
+
+}
+#caja4{
+    width: 90%;
+    height: 60vh;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    border-radius: 15px;
+
+}
+#caja4_1{
+    width: 50%;
+    height: 60vh;
+    background-image: url(../img/Captura\ de\ pantalla\ 2023-03-07\ 164934.png);
+    background-size:cover;
+    border-radius: 15px;
+    min-width: 38rem;
+
+
+}
+#caja4_2{
+    width: 50%;
+    height: 60vh;
+    background-image: url(../img/Captura\ de\ pantalla\ 2023-03-08\ 000129.png);
+    background-size:cover;
+    border-radius: 15px;
+
+}
+#caja5{
+    width: 92%;
+    height: 50vh;
+    background-image: url(../img/Captura\ de\ pantalla\ 2023-03-07\ 173718.png);
+    border-radius: 15px;
+}
+#caja6{
+    width: 92%;
+    height: 50vh;
+    background-image: url(../img/Captura\ de\ pantalla\ 2023-03-07\ 174003.png);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+#foto1{
+    width: 500px;
+    height: 500px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#caja7{
+    width: 90%;
+    height: 60vh;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    border-radius: 15px;
+
+}
+#caja7_1{
+    width: 50%;
+    height: 60vh;
+    background-image: url(../img/Captura\ de\ pantalla\ 2023-03-07\ 235828.png);
+    background-size:cover;
+    border-radius: 15px;
+    min-width: 38rem;
+
+
+}
+#caja7_2{
+    width: 50%;
+    height: 60vh;
+    background-image: url(../img/Captura\ de\ pantalla\ 2023-03-08\ 000027.png);
+    background-size:cover;
+    border-radius: 15px;
+}
+.botonescambio{
+    width: 25vh;
+    height: 5vh;
+    color: white;
+    background-color: #bc1888;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px solid  #bc1888 ;
+}
+.cajoon{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0px;
+    gap: 10px;
+}
+#botonescambio1{
+    width: 30vh;
+}
+.botonescambio:hover{
+    background-color: white;
+    color: black;
+    border: 4px solid  #bc1888 ;
+    transition: 1s;
+}
